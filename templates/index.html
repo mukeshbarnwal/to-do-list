@@ -8,8 +8,12 @@
         <script src="https://cdn.tailwindcss.com"></script>
       </head>
       
-      <body class="bg-gray-100 min-h-screen flex items-center justify-center px-4">
-        <div class="w-full max-w-md bg-white rounded-xl shadow-md p-6">
+      <body class="bg-gray-100 min-h-screen">
+        <!-- ✅ NAVIGATION BAR -->
+        {% include 'nav.html' %}
+      
+        <!-- ✅ MAIN CONTENT -->
+        <div class="max-w-md mx-auto mt-10 bg-white rounded-xl shadow-md p-6">
           <h1 class="text-2xl font-bold text-center text-blue-600 mb-4">To-Do List</h1>
       
           <form action="/add" method="post" class="flex gap-2 mb-4">
@@ -45,4 +49,6 @@
         </div>
       </body>
       
+      
 </html>
+
